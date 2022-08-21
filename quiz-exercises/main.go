@@ -10,6 +10,9 @@ import (
 )
 
 func main() {
+	// Flags are useful because they let you create options when running command-line programs
+
+	// ./coffee -flavor=chocolate -cream -order=incomplete
 	csvFilename := flag.String("csv", "problems.csv", "a csv file in the format of 'question,answer'\n")
 	// _ = csvFilename
 	timeLimit := flag.Int("limit", 30, "a limit for solving a problem")
